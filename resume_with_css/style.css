@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+.container{
+    background-color: aliceblue;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header{
+    /*text-align: center;*/
+}
+.profile-image{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    float: left;
+
+}
+.header-bio{
+    float: left;
+    padding: 30px;
+}
+.header-contact{
+    float: right;
+    padding: 30px;
+}
+ a{
+    text-decoration: none;
+    color: rgb(20, 117, 121);
+    font-weight: bold;
+    padding: 10px;
+}
+ a:hover{
+    text-decoration: underline;
+    color:rgb(224, 165, 17)
+    
+}
+h1,h2,h3,h4,h5,h6{
+    color: rgb(20, 117, 121);
+}
+.div-clear{
+    clear: both;
+}
+hr{
+    border: 1px solid black;
+    margin: 10px auto;
+}
+.left-div{
+    float: left;
+    width: 30%;
+}
+.right-div{
+    float: left;
+    width: 70%;
+}
+ol li p ul{
+    background-color: aqua;
+    border: 1px solid;
+    padding: 10px;
+}
+
+ul li{
+    margin-left: 10px;
+}
+.right-left-div{
+    float: left;
+    width: 80%;
+}
+.right-right-div{
+    float: right;
+    width: 20%;
+}
+.righted{
+    text-align: right;
+}
+.bottom{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+footer a{
+    color:antiquewhite
+}
