@@ -1,0 +1,79 @@
+*{
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+}
+
+
+header{
+    height: 5vh;
+    background-color: rgb(17, 17, 215);
+}
+
+/* Font name: Poppins, sans-serif
+
+Font size: 14px
+
+Font weight: 400
+
+Line height: normal
+
+Font  */
+main{
+    height: 85vh;
+    background-color: aliceblue;
+}
+footer {
+    background-image: linear-gradient(to right, white , #79d2f5); /* Light blue background */
+    padding: 20px 0; /* Padding for top and bottom */
+    display: flex;
+    justify-content: space-around; /* Evenly space out the sections */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+     /* Font family */
+     color: rgb(80, 80, 80); /* Dark text color */
+     font-size: 14px;
+     line-height: normal;
+     font-weight: 400;
+}
+footer div:not(:first-child) {
+    border-left: 1px solid white; /* Vertical line between sections */
+
+}
+
+footer div {
+    flex: 1;
+    min-width: 200px; /* Minimum width for responsiveness */
+    margin: 10px;
+    padding: 0 20px;
+}
+
+footer h3 {
+    font-size: 1.2em; /* Font size for section titles */
+    margin-bottom: 10px; /* Space below the titles */
+}
+
+footer ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    
+    color: #333; /* Dark text color */
+}
+
+footer ul li a:hover {
+    color: #736f6f; /* Underline on hover */
+}
+
+footer .contact-info {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+footer .contact-info i {
+    margin-right: 5px; /* Space between icon and text */
+}

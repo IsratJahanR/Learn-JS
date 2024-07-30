@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <h1>Calculator</h1>
     <div class="card">
         <div class="cal-head">
-            <input type="text" id="result" maxlength="10">
+            <input type="text" id="result" maxlength="10" value="">
         </div>
         <div class="cal-body">
             <div>
-                <input type="button" class="btn" value="C">
+                <input type="button" class="btn" value="C" onclick="Clear()">
                 <input type="button" class="btn" value="+/-">
                 <input type="button" class="btn" value="%">
-                <input type="button" class="btn btn-style" value="/">
-               
+                <input type="button" class="btn btn-style" value="/" onclick="print_num('/')">
+
             </div>
             <div>
-                <input type="button" class="btn" value="7">
-                <input type="button" class="btn" value="8">
-                <input type="button" class="btn" value="9">
-                <input type="button" class="btn btn-style" value="X">
-              
+                <input type="button" class="btn" value="7" onclick="print_num(7)">
+                <input type="button" class="btn" value="8" onclick="print_num(8)">
+                <input type="button" class="btn" value="9" onclick="print_num(9)">
+                <input type="button" class="btn btn-style" value="X" onclick="print_num('*')">
+
             </div>
             <div>
-                <input type="button" class="btn" value="4">
-                <input type="button" class="btn" value="5">
-                <input type="button" class="btn" value="6">
-                <input type="button" class="btn btn-style" value="-">
-                
+                <input type="button" class="btn" value="4" onclick="print_num(4)">
+                <input type="button" class="btn" value="5" onclick="print_num(5)">
+                <input type="button" class="btn" value="6" onclick="print_num(6)">
+                <input type="button" class="btn btn-style" value="-" onclick="print_num('-')" >
+
             </div>
             <div>
-                <input type="button" class="btn" value="1">
-                <input type="button" class="btn" value="2">
-                <input type="button" class="btn" value="3">
-                <input type="button" class="btn btn-style" value="+">
-              
+                <input type="button" class="btn" value="1" onclick="print_num(1)">
+                <input type="button" class="btn" value="2" onclick="print_num(2)">
+                <input type="button" class="btn" value="3" onclick="print_num(3)">
+                <input type="button" class="btn btn-style" value="+" onclick="print_num('+')">
+
             </div>
             <div>
-                <input type="button" class="btn" value="0">
-                <input type="button" class="btn" value=".">
-                <input type="button" class="btn" value="DEL">
-                <input type="button" class="btn" style="background-color: orange;" value="=">
-                
+                <input type="button" class="btn" value="0" onclick="print_num(0)">
+                <input type="button" class="btn" value="." onclick="print_num('.')">
+                <input type="button" class="btn" value="DEL" onclick="removeLast()" >
+                <input type="button" class="btn eql" value="=" onclick="calculate()">
+
             </div>
-            
+
         </div>
     </div>
-    
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

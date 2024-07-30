@@ -1,0 +1,56 @@
+/*variable declaration*/
+
+:root{
+    --primary-color:red;
+    --secondary-color:green;
+}
+
+.div11{
+    height: 250px;
+    width: 250px;
+    background-color: green;/* if any brouser doesnot support variable then this background can be used. ex: Internet Explorar*/
+    /*blue is added in case any wrong with primary-color variable*/
+    background-color: var(--primary-color,blue);
+    position: absolute;
+    z-index: 1;
+}
+
+.div12{
+    height: 250px;
+    width: 250px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    z-index: 2;
+}
+
+.flex-container{
+    background-color: antiquewhite;
+    display:flex;
+    /*flex-wrap: wrap;
+    flex-direction: column;*/
+
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flex-container > div{
+    font-size: 30px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: blueviolet;
+}
+h1{
+    text-shadow: 5px 5px 5px red;
+}
+.div-box-shdo{
+    width: 300px;
+    padding: 5px;
+    
+    background-color:aquamarine ;
+    box-shadow:10px 15px cyan;
+}
+

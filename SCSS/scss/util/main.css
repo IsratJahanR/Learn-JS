@@ -1,0 +1,28 @@
+header {
+  background: red;
+}
+
+p {
+  font-size: 15px;
+}
+
+nav {
+  margin-top: 15px;
+}
+nav ul {
+  list-style-type: node;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: inline-block;
+  color: antiquewhite;
+  text-decoration: none;
+  padding: 10px;
+  transition: 4s;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  background-color: aquamarine;
+}/*# sourceMappingURL=main.css.map */

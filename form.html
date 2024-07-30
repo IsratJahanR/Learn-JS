@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="keywords" content="website,israt">
+    <meta name="author" content="Israt jahan">
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      background-color: rgb(228, 237, 237);
+    }
+    
+  
+  </style>
+  <title>form</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/xknddnrq" method="post">
+    <h3>Registration form</h3>
+    <div>
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" required>
+    </div><br>
+
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    </div><br>
+    
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+    </div><br>
+    
+    <div>
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" id="dob">
+    </div><br>
+    
+    <div>
+        <label for="photo">Chose Your Photo</label>
+        <input type="file" name="photo" id="photo">
+    </div><br>
+    
+    <div>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input checked type="radio" name="gender" id="gender" value="female">Female
+    </div><br>
+    <div>
+        <label for="religion">Religion</label>
+        <input type="checkbox" name="religion" id="muslim" value="islam">Islam
+        <input type="checkbox" name="religion" id="hindu" value="hindu">Hindu
+    </div><br>
+    <div>
+        <label for="dept">Department</label>
+        <select name="dept" id="dept">
+            <option value="cse">CSE</option>
+            <option selected value="eee">EEE</option>
+            <option value="ete">ETE</option>
+
+        </select>
+    </div><br>
+    <div>
+        <label for="optional-message">Message</label>
+        <textarea name="optional-message" id="optional-message" cols="30px" rows="10px"></textarea>
+    </div><br>
+    
+    <div>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </div>
+</form>
+
+
+    
+</body>
+</html>
